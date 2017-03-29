@@ -79,7 +79,7 @@ if ( $_POST ) {
 <?php echo $message ?>
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-6" style="text-align: center;">
 			<h3>Adresse</h3>
 			<p>48 rue de la fête<br/>
 				1er étage<br/>
@@ -87,7 +87,7 @@ if ( $_POST ) {
 				tél: 08 45 69 21 78
 			</p>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6" style="text-align: center;">
 			<h3>Horaires</h3>
 			<p>Le mercredi de 14h à 18h<br/>
 				Le vendredi de 17h à 21h<br/>
