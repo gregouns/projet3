@@ -89,6 +89,7 @@ function display_sidebar() {
     is_page('contact'),
     is_page('tarifs'),
     is_page('nos-locaux'),
+    is_page('cours-particulier')
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

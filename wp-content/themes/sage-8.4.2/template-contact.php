@@ -30,6 +30,10 @@ if (isset($_POST['description'])) {
 	$description = $_POST['description'];
 	$description = addslashes(strip_tags(trim($description)));
 }
+$niveau = '';
+if (isset($_POST['niveau'])) {
+	$niveau = $_POST['niveau'];
+}
 if ( $_POST ) {
 	$_error = false;
 	if ( isset($_POST['title']) && strlen($_POST['title']) == 0 ) {
@@ -48,16 +52,19 @@ if ( $_POST ) {
 		$_error  = true;
 		$msgError['description'] = 'Merci de renseigner la description';
 	}
+	if ( isset($_POST['niveau']) && strlen($_POST['niveau']) == 0 ) {
+		$_error  = true;
+		$msgError['niveau'] = 'Merci de renseigner votre niveau';
+	}
+
 	if ( $_error == false ) {
 		$title = $_POST['title'];
 		$email = $_POST['email'];
 		$description = $_POST['description'];
 		$phone = $_POST['phone'];
-		$info = array('Email'     => $email,
-					'description' => $description,
-					'téléphone'   => $phone);
-		
-		wp_mail('greglelay@gmail.com',$title,$info);
+		$niveau = $_POST['niveau'];
+		$info = 'Email : ' . $email . '<br/><br/> Description : ' . $description . '<br/><br/> Téléphone : ' . $phone . '<br/><br/> Niveau : ' . $niveau;
+		wp_mail('greglelay@gmail.com',$title,$info,"Content-type: text/html");
 	}
 	else {
 		$message = '<div class="alert alert-danger">Veuillez remplir tous les champs : <ul>';
@@ -104,6 +111,19 @@ if ( $_POST ) {
 				<div class="form-group <?php if($msgError['phone']) {echo 'has-error'; }?>">
 					<label for="phone">telephone</label>
 					<input id="phone" class="form-control" name="phone" type="text" value="<?php if (isset($_POST['phone'])) {echo $_POST['phone'];}?>" />
+				</div>
+				<div class="form-group <?php if($msgError['phone']) {echo 'has-error'; }?>">
+					<label for="niveau">Niveau</label>
+					<select name="niveau">
+						<option>Sélectionnez un niveau</option>
+						<option value="6eme">6éme</option>
+						<option value="5eme">5éme</option>
+						<option value="4eme">4éme</option>
+						<option value="3eme">3éme</option>
+						<option value="seconde">seconde</option>
+						<option value="première">première</option>
+						<option value="terminale">terminale</option>
+					</select>
 				</div>
 				<div class="form-group <?php if($msgError['description']) {echo 'has-error'; }?>">
 					<label for="description">description</label>

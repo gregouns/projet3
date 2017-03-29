@@ -23,8 +23,14 @@
 	<div class="row">
 		<div class="col-md-5 bg-warning">
 			<div class="row">
-				<div class="col-md-6" style="text-align: center;">
-					<h3>Elève</h3>
+				<div class="col-md-6 aligncenter" style="text-align: center;">
+					<?php 
+					query_posts('page_id=9');
+					while ( have_posts() ) : the_post();?>
+						<h3><a href="<?php the_permalink() ?>">Elève</a></h3>
+					<?php
+					endwhile;
+					?>
 				</div>
 				<div class="col-md-6">
 					<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=150%C3%97150&w=150&h=150" alt="eleve" class="img-responsive img-circle">
@@ -34,10 +40,16 @@
 		</div>
 		<div class="col-md-offset-2 col-md-5 bg-warning">
 			<div class="row">
-				<div class="col-md-6 aligncenter">
-					<h3>Particulier</h3>
+				<div class="col-md-6 aligncenter" style="text-align: center;">
+					<?php 
+					query_posts('page_id=9');
+					while ( have_posts() ) : the_post();?>
+						<h3><a href="<?php the_permalink() ?>">particulier</a></h3>
+					<?php
+					endwhile;
+					?>
 				</div>
-				<div class="col-md-6 particulier">
+				<div class="col-md-6">
 					<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=150%C3%97150&w=150&h=150" alt="eleve" class="img-responsive img-circle">
 				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper, dui et ornare sollicitudin, justo eros condimentum lectus, quis ultricies urna tortor sed mauris. Nullam sodales, </p>
