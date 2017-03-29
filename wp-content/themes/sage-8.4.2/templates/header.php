@@ -9,7 +9,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+        <a class="navbar-brand brand" href="<?= esc_url(home_url('/')); ?>">Anglais</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
