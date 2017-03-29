@@ -1,29 +1,48 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-offset-3 col-md-6">
-		<?php 
+		<div class="col-md-6">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget pretium urna, ac mattis purus. Nam dui enim, posuere at massa quis, aliquam suscipit dolor. Nulla at nunc libero. Nam nisi lorem, egestas vel tincidunt in, imperdiet ac dolor. Nam ac elit interdum, consequat sapien ac, efficitur lacus. Quisque varius tellus eget eleifend rutrum. Maecenas mattis feugiat lorem, a iaculis ipsum consequat id.
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget pretium urna, ac mattis purus. Nam dui enim, posuere at massa quis, aliquam suscipit dolor. Nulla at nunc libero. Nam nisi lorem, egestas vel tincidunt in, imperdiet ac dolor. Nam ac elit interdum, consequat sapien ac, efficitur lacus. Quisque varius tellus eget eleifend rutrum. Maecenas mattis feugiat lorem, a iaculis ipsum consequat id. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget pretium urna, ac mattis purus. Nam dui enim, posuere at massa quis, aliquam suscipit dolor. Nulla at nunc libero. Nam nisi lorem, egestas vel tincidunt in, imperdiet ac dolor. Nam ac elit interdum, consequat sapien ac, efficitur lacus. Quisque varius tellus eget eleifend rutrum. Maecenas mattis feugiat lorem, a iaculis ipsum consequat id. 
+		</div>
+		<div class="col-md-6">
+			<?php 
 			query_posts('page_id=41');
 			while ( have_posts() ) : the_post();?>
-				<!--appel du titre de la page-->
-				<h1><?php the_title();?></h1>
 				<?php if ( has_post_thumbnail() ) {
 					// appel de l' image de la page
 					the_post_thumbnail('full', array('class' => 'img-responsive'));
 				} 
 				the_content();
 			endwhile;
-		?>
+			?>
 		</div>
 	</div>
+	<hr>
 	<div class="row">
-		<div class="col-md-6 jumbotron">
-			<h3>Elève</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper, dui et ornare sollicitudin, justo eros condimentum lectus, quis ultricies urna tortor sed mauris. Nullam sodales, </p>
+		<div class="col-md-5 bg-warning">
+			<div class="row">
+				<div class="col-md-6" style="text-align: center;">
+					<h3>Elève</h3>
+				</div>
+				<div class="col-md-6">
+					<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=150%C3%97150&w=150&h=150" alt="eleve" class="img-responsive img-circle">
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper, dui et ornare sollicitudin, justo eros condimentum lectus, quis ultricies urna tortor sed mauris. Nullam sodales, </p>
+			</div>
 		</div>
-		<div class="col-md-6 jumbotron">
-			<h3>Particulier</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper, dui et ornare sollicitudin, justo eros condimentum lectus, quis ultricies urna tortor sed mauris. Nullam sodales, </p>
+		<div class="col-md-offset-2 col-md-5 bg-warning">
+			<div class="row">
+				<div class="col-md-6 aligncenter">
+					<h3>Particulier</h3>
+				</div>
+				<div class="col-md-6 particulier">
+					<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=150%C3%97150&w=150&h=150" alt="eleve" class="img-responsive img-circle">
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper, dui et ornare sollicitudin, justo eros condimentum lectus, quis ultricies urna tortor sed mauris. Nullam sodales, </p>
+			</div>
 		</div>
-	</div>	
+	</div>
+	<hr>	
 </div>
