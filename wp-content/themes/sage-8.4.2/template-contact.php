@@ -52,7 +52,7 @@ if ( $_POST ) {
 		$_error  = true;
 		$msgError['description'] = 'Merci de renseigner la description';
 	}
-	if ( isset($_POST['niveau']) && strlen($_POST['niveau']) == 0 ) {
+	if ( isset($_POST['niveau'])  == -1 ) {
 		$_error  = true;
 		$msgError['niveau'] = 'Merci de renseigner votre niveau';
 	}
@@ -115,7 +115,7 @@ if ( $_POST ) {
 				<div class="form-group <?php if($msgError['phone']) {echo 'has-error'; }?>">
 					<label for="niveau">Niveau</label>
 					<select name="niveau">
-						<option>Sélectionnez un niveau</option>
+						<option value="-1">Sélectionnez un niveau</option>
 						<option value="6eme">6éme</option>
 						<option value="5eme">5éme</option>
 						<option value="4eme">4éme</option>
