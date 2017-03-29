@@ -52,7 +52,7 @@ if ( $_POST ) {
 		$_error  = true;
 		$msgError['description'] = 'Merci de renseigner la description';
 	}
-	if ( isset($_POST['niveau'])  == -1 ) {
+	if ( isset($_POST['niveau']) && $niveau == -1 ) {
 		$_error  = true;
 		$msgError['niveau'] = 'Merci de renseigner votre niveau';
 	}
