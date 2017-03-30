@@ -21,7 +21,7 @@
 	</div>
 	<hr>
 	<div class="row">
-		<div class="col-md-5 bg-warning">
+		<div class="col-md-5 bg-success square">
 			<div class="row">
 				<div class="col-md-6 aligncenter" style="text-align: center;">
 					<?php 
@@ -38,7 +38,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper, dui et ornare sollicitudin, justo eros condimentum lectus, quis ultricies urna tortor sed mauris. Nullam sodales, </p>
 			</div>
 		</div>
-		<div class="col-md-offset-2 col-md-5 bg-warning">
+		<div class="col-md-offset-2 col-md-5 bg-success square">
 			<div class="row">
 				<div class="col-md-6 aligncenter" style="text-align: center;">
 					<?php 
@@ -58,7 +58,7 @@
 	</div>
 	<hr>
 	<div class="row">
-		<div class="col-md-5 bg-warning">
+		<div class="col-md-5 bg-success square">
 				<div class="col-md-6 aligncenter" style="text-align: center;">
 					<?php 
 					query_posts('page_id=44');
@@ -71,7 +71,7 @@
 				<p>suivant le nombre heures choisis vous bénificiez de réductions<br/>
 					à partir de 15€</p>
 		</div>
-		<div class="col-md-offset-2 col-md-5 bg-warning">
+		<div class="col-md-offset-2 col-md-5 bg-success square">
 			<div class="col-md-6 aligncenter" style="text-align: center;">
 				<?php 
 				query_posts('p=117');
