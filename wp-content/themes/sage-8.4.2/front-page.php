@@ -72,7 +72,7 @@
 					à partir de 15€</p>
 		</div>
 		<div class="col-md-offset-2 col-md-5 bg-success square">
-			<div class="col-md-6 aligncenter" style="text-align: center;">
+			<div class="aligncenter" style="text-align: center;">
 				<?php 
 				query_posts('p=117');
 				while ( have_posts() ) : the_post();?>
@@ -80,6 +80,7 @@
 				<?php
 				endwhile;
 				?>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper, dui et ornare sollicitudin, justo eros condimentum lectus, quis ultricies urna tortor sed mauris. Nullam sodales</p>
 			</div>
 		</div>
 	</div>
