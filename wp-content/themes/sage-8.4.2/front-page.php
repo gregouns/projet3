@@ -78,9 +78,9 @@
 				while ( have_posts() ) : the_post();?>
 					<h3><a href="<?php the_permalink() ?>"><?php the_title()?></a></h3>
 				<?php
+				the_content();
 				endwhile;
 				?>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper, dui et ornare sollicitudin, justo eros condimentum lectus, quis ultricies urna tortor sed mauris. Nullam sodales</p>
 			</div>
 		</div>
 	</div>
