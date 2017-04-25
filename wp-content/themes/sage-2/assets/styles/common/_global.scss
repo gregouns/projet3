@@ -1,0 +1,122 @@
+.home{
+	header {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		color:white;
+		a {
+			color:white;
+		}
+		.navbar-toggle .icon-bar {
+		    background-color: white;
+		}
+		.navbar-collapse {
+			@media screen and (min-width:461px) and (max-width: 768px) {
+				width: 100%;
+				li {
+				display: inline-block;
+					a {
+					color:white;
+					}
+				}
+			}
+			@media screen and (max-width: 460px) {
+				width: 100%;
+				li {
+					text-align: center;
+					border: 1px solid purple;
+					a {
+					color:black;
+					}
+				}
+			}
+		}
+	}
+	.glyph {
+		margin-bottom:50px;
+		margin-left: 30px;
+		justify-content: space-between;
+		.glyphicon {
+			width:100px;
+			height:100px;
+			color:white;
+			background-color:orange;
+			border: 10px solid blue;
+			border-radius:100%;
+			font-size:70px;
+			margin: 0 auto; 
+		}
+		.col-sm-3 {
+			margin: 0 auto;
+		}
+	}
+}
+.yellow {
+	width: 100%;
+	height:200px;
+	text-align: center;
+	padding-top:100px;
+	color:white;
+	text-transform:uppercase;
+	a {
+		color:white;
+		font-size: 20px;
+	}
+	h2 {
+		color:white;
+		font-size: 40px;
+	}
+}
+
+p,h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.imagefront {
+	display:block;
+	margin:auto;
+	width:100%;
+	@media screen and (max-width: 990px) {
+	margin-bottom:50px;
+	}
+}
+.tabletarif {
+	width:500px;
+	margin: 50px auto auto auto;
+}
+.list-group-item {
+
+	color:#FEBF01;
+}
+
+.informationperso {
+	margin-top:50px;
+}
+.formulaire {
+	margin: 0 auto;
+    width: 100%; 
+}
+
+.imgclass {
+	margin:50px auto 0px auto;
+	.photocours {
+		display: block;
+		margin:auto;
+	}
+	.textcours {
+		margin:20px 100px 0px 100px;
+	}
+}
+.nos-locaux {
+	.main {
+		margin:auto;
+		background-color:#F5F5F5;
+	}
+}
+.main {
+	padding-bottom: 50px;
+	text-align: center;
+	margin-top:50px;
+	@media screen and (max-width: 460px) {
+			margin-top:300px;
+		}
+}

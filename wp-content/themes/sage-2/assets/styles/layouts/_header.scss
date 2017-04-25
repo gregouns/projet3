@@ -1,0 +1,36 @@
+header {
+	color:blue;
+	a {
+	color:blue;
+	font-size: 15px;
+	text-transform: uppercase;
+	line-height: 23px;
+	font-weight: 700;
+	}
+	a:hover {
+		color:red;
+	}
+}
+.glyphHeader {
+	text-align:center;
+	justify-content:space-between;
+	display:block;
+	width:100%;
+	margin:auto;
+	@media screen and (max-width: 768px) {
+		margin:auto;
+	}
+	.fa {
+		font-size: 40px;
+	}
+}
+.navbar-toggle .icon-bar {
+    background-color: blue;
+}
+.navbar-collapse  {
+	li {
+		a {
+			color:blue;
+		}
+	}
+}
